@@ -4,11 +4,11 @@ import os
 import re
 from datetime import datetime
 
-personName = 'Joao Sedoc' # input('Enter your full name: ')
-fbData = 'N' # input('Do you have Facebook data to parse through (y/n)?')
-googleData = 'y' # input('Do you have Google Hangouts data to parse through (y/n)?')
-linkedInData = 'N' # input('Do you have LinkedIn data to parse through (y/n)?')
-whatsAppData = 'N' # input('Do you have whatsAppData to parse through (y/n)?')
+personName = input('Enter your full name: ')
+fbData = input('Do you have Facebook data to parse through (y/n)?')
+googleData = input('Do you have Google Hangouts data to parse through (y/n)?')
+linkedInData = input('Do you have LinkedIn data to parse through (y/n)?')
+whatsAppData = input('Do you have whatsAppData to parse through (y/n)?')
 
 def getWhatsAppData():
         df = pd.read_csv('whatsapp_chats.csv')
